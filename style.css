@@ -1,16 +1,61 @@
-/* Reset default styles */
+/* Reset */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* Body styling */
+/* Base */
 body {
     font-family: 'Segoe UI', sans-serif;
-    background-color: #f0f4f8;
+    background-color: #f4f7fa;
     color: #333;
     line-height: 1.6;
+}
+
+/* Login */
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #2c3e50;
+    padding: 30px 10px;
+}
+
+.login-form {
+    background: white;
+    padding: 20px 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    text-align: center;
+}
+
+.login-form h2 {
+    margin-bottom: 15px;
+    color: #2c3e50;
+}
+
+.login-form input {
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.login-form button {
+    width: 100%;
+    padding: 10px;
+    background: #4ca2cd;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.login-form button:hover {
+    background: #357ab8;
 }
 
 /* Header */
@@ -18,16 +63,12 @@ header {
     background-color: #2c3e50;
     color: white;
     text-align: center;
-    padding: 20px 10px;
-}
-
-header h1 {
-    font-size: 2.5rem;
+    padding: 20px;
 }
 
 header nav a {
-    color: #f9f9f9;
-    margin: 0 15px;
+    color: #eee;
+    margin: 0 10px;
     text-decoration: none;
     font-weight: bold;
 }
@@ -36,17 +77,12 @@ header nav a:hover {
     text-decoration: underline;
 }
 
-/* Hero Section */
+/* Hero */
 .hero {
     padding: 40px 20px;
     background: linear-gradient(to right, #67b26f, #4ca2cd);
     color: white;
     text-align: center;
-}
-
-.hero h2 {
-    font-size: 2rem;
-    margin-bottom: 10px;
 }
 
 /* Sections */
@@ -56,41 +92,45 @@ section {
     margin: auto;
 }
 
-section h2 {
-    font-size: 1.8rem;
-    margin-bottom: 20px;
-    color: #2c3e50;
-}
-
-/* Cards for exercise types */
 .exercise-category {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 20px;
+    gap: 15px;
+    margin-top: 20px;
 }
 
 .card {
     background: white;
     padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
     text-align: center;
+    font-weight: bold;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
 }
 
 /* Footer */
 footer {
-    background-color: #2c3e50;
+    background: #2c3e50;
     color: white;
     text-align: center;
-    padding: 15px 10px;
-    font-size: 0.9rem;
+    padding: 15px;
 }
 
-a {
-    color: #0077cc;
-    text-decoration: none;
+/* Animations */
+.fade-in {
+    animation: fadeIn 1s ease-in-out;
 }
 
-a:hover {
-    text-decoration: underline;
+.slide-up {
+    animation: slideUp 0.7s ease-out;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes slideUp {
+    from { opacity: 0; transform: translateY(40px); }
+    to { opacity: 1; transform: translateY(0); }
 }

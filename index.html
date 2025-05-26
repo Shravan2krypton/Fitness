@@ -3,76 +3,81 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FitLife - Your Fitness Companion</title>
+    <title>FitLife - Fitness Companion</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
+    <!-- Login Form -->
+    <div class="login-container">
+        <form class="login-form">
+            <h2>Login</h2>
+            <input type="text" placeholder="Username" required>
+            <input type="password" placeholder="Password" required>
+            <button type="submit">Login</button>
+        </form>
+    </div>
+
+    <!-- Main Page Content -->
     <header>
         <h1>🏋️‍♂️ FitLife</h1>
         <p>Your Journey to a Healthier Life Starts Here</p>
         <nav>
             <a href="#exercises">Exercises</a>
             <a href="#plans">Workout Plans</a>
-            <a href="#tips">Tips & Nutrition</a>
+            <a href="#tips">Tips</a>
             <a href="#contact">Contact</a>
         </nav>
     </header>
 
-    <section class="hero">
+    <section class="hero fade-in">
         <h2>Welcome to FitLife</h2>
         <p>Discover the best workouts, tips, and routines for every fitness level!</p>
     </section>
 
-    <section id="exercises">
+    <section id="exercises" class="fade-in">
         <h2>Types of Exercises</h2>
         <div class="exercise-category">
-            <div class="card">
-                <h3>Cardio</h3>
-                <p>Boost endurance with running, cycling, and HIIT.</p>
-            </div>
-            <div class="card">
-                <h3>Strength</h3>
-                <p>Build muscle with weight lifting and resistance training.</p>
-            </div>
-            <div class="card">
-                <h3>Flexibility</h3>
-                <p>Improve mobility with yoga and stretching routines.</p>
-            </div>
-            <div class="card">
-                <h3>Core</h3>
-                <p>Tone your abs with planks, crunches, and more.</p>
-            </div>
+            <div class="card slide-up">Cardio</div>
+            <div class="card slide-up">Strength</div>
+            <div class="card slide-up">Flexibility</div>
+            <div class="card slide-up">Core</div>
         </div>
     </section>
 
-    <section id="plans">
+    <section id="plans" class="fade-in">
         <h2>Workout Plans</h2>
         <ul>
-            <li><strong>Beginner:</strong> 20 min/day, full body focus</li>
-            <li><strong>Intermediate:</strong> 30-45 min/day, split routines</li>
-            <li><strong>Advanced:</strong> 60+ min/day, high intensity</li>
+            <li><strong>Beginner:</strong> 20 min/day, full body</li>
+            <li><strong>Intermediate:</strong> 45 min/day, split</li>
+            <li><strong>Advanced:</strong> 60+ min/day, HIIT</li>
         </ul>
     </section>
 
-    <section id="tips">
+    <section id="tips" class="fade-in">
         <h2>Tips & Nutrition</h2>
         <ul>
-            <li>Drink at least 2L of water daily</li>
-            <li>Eat a balanced diet with protein, carbs, and fats</li>
-            <li>Warm up before and cool down after workouts</li>
-            <li>Listen to your body and rest when needed</li>
+            <li>Stay hydrated</li>
+            <li>Balanced diet</li>
+            <li>Rest and recover</li>
         </ul>
     </section>
 
-    <section id="contact">
+    <section id="contact" class="fade-in">
         <h2>Join Us</h2>
-        <p>Email us at: <a href="mailto:contact@fitlife.com">contact@fitlife.com</a></p>
-        <p>Follow us on:
-            <a href="#">Instagram</a> |
-            <a href="#">YouTube</a> |
-            <a href="#">Twitter</a>
+        <p>Email: <a href="mailto:contact@fitlife.com">contact@fitlife.com</a></p>
+        <p>Follow: 
+            <a href="#">Instagram</a> | 
+            <a href="#">YouTube</a>
         </p>
     </section>
+
+    <footer>
+        <p>&copy; 2025 FitLife. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
 
     <footer>
         <p>&copy; 2025 FitLife. All rights reserved.</p>
